@@ -24,5 +24,7 @@
 
   <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/" />
   <mvc:annotation-driven />
-
+		<mvc:interceptors>
+			<bean class="com.budgetTrack.web.utills.LoginInterceptor"></bean>
+		</mvc:interceptors>
 </beans>

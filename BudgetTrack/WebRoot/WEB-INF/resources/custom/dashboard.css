@@ -1,0 +1,242 @@
+@CHARSET "ISO-8859-1";
+.parent{
+	display: table;
+	width: 50%;
+}
+.child{
+	display: table-cell;
+}
+.header-margin{
+	margin-left: 45%;
+}
+.navbar-right{
+	margin-left: 3%;
+}
+.margin{
+	margin-left: 5px;
+}
+.float-l{
+	clear: both;
+	float: left;
+}
+.btn {
+  margin: 0px 10px;
+  width : auto;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  
+  -moz-box-shadow:inset 1px -2px 13px 1px #a8aba8;
+	-webkit-box-shadow:inset 1px -2px 13px 1px #a8aba8;
+	box-shadow:inset 1px -2px 13px 1px #a8aba8;
+	background-color:#ffffff;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	border:3px solid #fafafa;
+  
+}
+
+.blue {
+  color: #55acee;
+  border: 2px #55acee thin;
+}
+
+.blue:hover {
+  background-color: #55acee;
+  color: #fff
+}
+
+.green {
+  color: #2ecc71;
+  border: 2px #2ecc71 thin;
+}
+
+.green:hover {
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+.red {
+  color: #e74c3c;
+  border: 2px #e74c3c thin;
+}
+
+.red:hover {
+  color: #fff;
+  background-color: #e74c3c;
+}
+
+.purple {
+  color: #9b59b6;
+  border: 2px #9b59b6 thin;
+}
+
+.purple:hover {
+  color: #fff;
+  background-color: #9b59b6;
+}
+
+.orange {
+  color: #e67e22;
+  border: 2px #e67e22 thin;
+}
+
+.orange:hover {
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.yellow {
+  color: #f1c40f;
+  border: 2px #f1c40f thin;
+}
+
+.yellow:hover {
+  color: #fff;
+  background-color: #f1c40f;
+}
+
+.buttons {
+  width:98%;
+  text-align: center;
+
+}
+.navbar {
+	margin-bottom:0px;
+}
+.btn-justified{
+	width:100%;
+	display:table;
+}
+.btn-justified > li{
+	display: table-cell;
+    text-decoration:none;
+    width:auto;
+        margin-left:15px;
+    margin-right:15px;
+	
+}
+.btn-justified > li>a{
+
+    text-decoration:none;
+    text-align:center;
+	
+}
+
+
+
+.menusign {
+  display: block;
+  width: 10px;
+  line-height: .3;
+  font-size: 2em;
+  margin: .5em;
+}
+.menusign br {
+  height: 0;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 260px;
+  background: #f3f3f3;
+  -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
+  transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
+  -webkit-box-shadow: 3px 3px 14px rgba(90, 67, 94, 0.92);
+  box-shadow: 3px 3px 14px rgba(90, 67, 94, 0.92);
+}
+.sidebar #close {
+  float: right;
+  margin: -5.5rem 1rem;
+  font-size: 1.4em;
+  color: #fa598d;
+  text-align: right;
+}
+.sidebar.closed {
+  left: -260px;
+  -webkit-box-shadow: 0 0 0 #1abc9c;
+  box-shadow: 0 0 0 #1abc9c;
+}
+.sidebar h2 {
+  padding: .5em;
+  color: #1abc9c;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li{
+  width: 90%;
+  margin: 5px 10px;
+  float: left;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 5px 6px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid #1abc9c;
+  background: #1abc9c;
+  color: #f3f3f3;
+  height: 45px;
+}
+.sidebar ul li a  {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.sidebar ul li:hover {
+  background: #17a689;
+  border-color: #17a689;
+}
+.sideBarTrg{
+	position: absolute;
+	width: 36px;
+	height: 100%;
+	background-color:#040279; 
+	-webkit-box-shadow: 3px 3px 14px rgba(90, 67, 94, 0.92);
+  box-shadow: 3px 3px 14px rgba(90, 67, 94, 0.92);
+}
+.trg-icon-sty{
+	margin-top: 200px;
+	margin-left:25px;
+    font-size: 40px;
+    position:relative;
+    
+}
+
+/* Blurred class
+
+This class is added to the container 
+(#blurMe) when the sidebar is open.
+-----------------------------------*/
+.blurred {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  -webkit-filter: url(#blur);
+  filter: url(#blur);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
+}
